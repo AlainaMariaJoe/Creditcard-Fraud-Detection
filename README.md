@@ -85,7 +85,10 @@ I worked with anonymized transaction data, where features are derived from PCA (
 ---
 
 ## 🔍 Key Insights
-- **Logistic Regression** was the most balanced across performance metrics
+-  **Decision Tree** achieved the **highest accuracy** (up to 99.80%)
+  But it may be **overfitting**, especially because SMOTE oversampling can cause the model to memorize synthetic patterns rather than generalize to real-world fraud.
+-  **Logistic Regression** performed slightly lower in terms of accuracy, but it was **more balanced overall** — showing strong precision, recall, and generalization across both full and selected feature sets.  
+  That makes it a **reliable choice** for real-world fraud detection, where catching fraud matters more than just accuracy.
 - **SMOTE** significantly boosted the ability to detect frauds
 - **Correlation-based feature selection** reduced dimensionality without major performance loss
 - High accuracy isn't everything — **recall** matters more for fraud detection!
